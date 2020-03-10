@@ -2,9 +2,9 @@
 
 namespace MayorDeTresNumeros
 {
-    public class utlis
+    public static class Utlis
     {
-        public void ErrorMenssaje(string menssaje)
+        public static void ErrorMenssaje(string menssaje)
         {
             Console.WriteLine("                              .............         ");
             Console.WriteLine("                           .:|||||||||||||||:.      ");
@@ -14,7 +14,7 @@ namespace MayorDeTresNumeros
             Console.WriteLine("                --@@@@----------:  :----------@@@@--");
             Console.WriteLine($"                             {menssaje}");   
         }
-        public void DrawMenssaje(string message)
+        public static void DrawMenssaje(string message)
              {
                  Console.WriteLine("                               ......               ");
                  Console.WriteLine("                            .:||||||||:.            ");
