@@ -8,11 +8,11 @@ namespace MayorDeTresNumeros
         {
             Console.WriteLine("                              .............         ");
             Console.WriteLine("                           .:|||||||||||||||:.      ");
-            Console.WriteLine("                     ---- |    ) |    ) |****| |    )");
+            Console.WriteLine("                     ´´´´ |    ) |    ) |****| |    )");
             Console.WriteLine("                    |---- |****  |****  |    | |**** ");
-            Console.WriteLine("                     ---- |    | |    | |....| |    |");
+            Console.WriteLine("                     ____ |    | |    | |....| |    |");
             Console.WriteLine("                --@@@@----------:  :----------@@@@--");
-            Console.WriteLine($"                             {menssaje}");   
+            Console.WriteLine($"                 {menssaje}");   
         }
         public static void DrawMenssaje(string message)
              {
@@ -21,9 +21,10 @@ namespace MayorDeTresNumeros
                  Console.WriteLine("                           |            |           ");
                  Console.WriteLine("                          (   o      o   )          ");
                  Console.WriteLine("                --@@@@----------:  :----------@@@@--");
-                 Console.WriteLine($"                            {message}");
+                 Console.WriteLine($"                 {message}");
              }
     }
 }
+
    
     
