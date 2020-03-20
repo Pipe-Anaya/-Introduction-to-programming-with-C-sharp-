@@ -4,18 +4,50 @@ namespace utlis
 {
     public class Utlis
     {
-        public static int ReadMenssaje(int x,string menssaje)
+        public static int ReadMenssajeNum(int x,string menssaje)
         {
             while(x!=0)
             {
                 try
                 {
-                    console.writeline(menssaje);
-                    x = int32.parse(console.readline());
+                    Console.WriteLine(menssaje);
+                    x = Int32.Parse(Console.ReadLine());
                 }
-                catch(Exception e)
+                catch(Exception)
                 {
-                    console.writeline("Ha ocurrido un error, intente nuevamente");
+                    Console.WriteLine("Ha ocurrido un error, intente nuevamente");
+                }
+            }
+            return x;
+        }
+        public static string ReadMenssajeString(string x,string menssaje)
+        {
+            while (x != "")
+            {
+                try
+                {
+                    Console.WriteLine(menssaje);
+                    x = Console.ReadLine();
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Ha ocurrido un error, intente nuevamente");
+                }
+            }
+            return x;   
+        }
+        public static double ReadMenssajeNumDouble(double x, string menssaje)
+        {
+            while (x != 0.0)
+            {
+                try
+                {
+                    Console.WriteLine(menssaje);
+                    x =double.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Ha ocurrido un error, intente nuevamente");
                 }
             }
             return x;

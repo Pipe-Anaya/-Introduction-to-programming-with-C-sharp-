@@ -10,8 +10,8 @@ namespace ConsoleApp
             {
                 Console.WriteLine("Ingrese el número del programa que quiere ejecutar.");
                 Console.WriteLine("[1] para figuras geométricas planas");
+                Console.WriteLine("[2] para el mayor de tres números");
                 Console.WriteLine("[0] para salir del programa");
-
                 string programa = Console.ReadLine();
 
                 switch (programa)
@@ -19,6 +19,10 @@ namespace ConsoleApp
                     case "1":
                         ProgramaFigurasGeometricas programaFigurasGeometricas = new ProgramaFigurasGeometricas();
                         programaFigurasGeometricas.ejecutar();
+                        break;
+                    case "2":
+                        ProgramaMayorDeTresNumeros programaMayorDeTresNumeros = new ProgramaMayorDeTresNumeros();
+                        programaMayorDeTresNumeros.ejecutar();
                         break;
                     case "0":
                         Environment.Exit(1);
