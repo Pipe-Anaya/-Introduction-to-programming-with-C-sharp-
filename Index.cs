@@ -11,6 +11,7 @@ namespace ConsoleApp
                 Console.WriteLine("Ingrese el número del programa que quiere ejecutar.");
                 Console.WriteLine("[1] para figuras geométricas planas");
                 Console.WriteLine("[2] para el mayor de tres números");
+                Console.WriteLine("[3] para jugar adivina el número");
                 Console.WriteLine("[0] para salir del programa");
                 string programa = Console.ReadLine();
 
@@ -23,6 +24,10 @@ namespace ConsoleApp
                     case "2":
                         ProgramaMayorDeTresNumeros programaMayorDeTresNumeros = new ProgramaMayorDeTresNumeros();
                         programaMayorDeTresNumeros.ejecutar();
+                        break;
+                    case "3":
+                        ProgramaAdivinaElNumero programaAdivinaElNumero = new ProgramaAdivinaElNumero();
+                        programaAdivinaElNumero.ejecutar();
                         break;
                     case "0":
                         Environment.Exit(1);
