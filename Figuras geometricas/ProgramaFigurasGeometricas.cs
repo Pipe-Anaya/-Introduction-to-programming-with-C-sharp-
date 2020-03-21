@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace ConsoleApp
 {
@@ -13,41 +14,39 @@ namespace ConsoleApp
                 Console.WriteLine("[2] Para el área o perímetro del triángulo");
                 Console.WriteLine("[3] para el area de un circulo");
                 Console.WriteLine("[0] Para regresar al menú principal");
-
                 string opcion = Console.ReadLine();
-
                 switch (opcion)
                 {
                     case "1":
                         Console.WriteLine("Ingrese el valor del lado");
-                        float lado = float.Parse(Console.ReadLine());
-
+                        float lado = float.Parse(
+                        Console.ReadLine()
+                        );
                         Cuadrado cuadrado = new Cuadrado(lado);
-
                         Console.WriteLine($"El perímetro es: {cuadrado.perimetro()}");
                         Console.WriteLine($"El área es: {cuadrado.area()}");
                         break;
-
                     case "2":
                         Console.WriteLine("Ingrese el valor de la base");
-                        float _base = float.Parse(Console.ReadLine());
-
+                        float _base = float.Parse(
+                        Console.ReadLine()
+                        );
                         Console.WriteLine("Ingrese el valor del segundo lado");
-                        float altura = float.Parse(Console.ReadLine());
-
+                        float altura = float.Parse(
+                        Console.ReadLine()
+                        );
                         Triangulo triangulo = new Triangulo(_base, altura);
-
                         Console.WriteLine($"El perímetro es: {triangulo.perimetro()}");
                         Console.WriteLine($"El área es: {triangulo.area()}");
-
                         break;
                     case "3":
                         Console.WriteLine("Ingrese el valor del radio");
-                        float radio = float.Parse(Console.ReadLine());
-
+                        float radio = float.Parse(
+                        Console.ReadLine()
+                        );
                         Circulo circulo = new Circulo(radio);
-
-                        Console.WriteLine($"La circunferencia es {circulo.circunferencia()}");
+                        Console.WriteLine($"La circunferencia es " + 
+                         $"{circulo.circunferencia()}");
                         Console.WriteLine($"El área es: {circulo.area()}");
                         break;
                     case "0":

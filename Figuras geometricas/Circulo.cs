@@ -4,22 +4,22 @@ namespace ConsoleApp
 {
     class Circulo
     {
-        private float radio;
+        private float Radio;
 
-        public Circulo(float radio)
+        public Circulo(float Radio)
         {
-            this.radio = radio;
+            this.Radio = Radio;
         }
 
         public float area()
         {
-            float PIxRadio = (float)Math.PI * radio;
+            float PIxRadio = (float)Math.PI * Radio;
             return PIxRadio * PIxRadio;
         }
 
         public float circunferencia()
         {
-            return (radio * 2) * (float)Math.PI;
+            return (Radio * 2) * (float)Math.PI;
         }
     }
 }
