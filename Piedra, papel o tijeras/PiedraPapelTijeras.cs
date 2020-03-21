@@ -42,26 +42,36 @@ namespace ConsoleApp
                 {
                     Console.WriteLine("Entrada ingresada no valida intente nuevamente");
                 }
-                else if (usuario == "piedra"&& maquina == "tijeras" || usuario == "papel" && maquina == "piedra" ||
-                    usuario == "tijeras" && maquina == "papel")
+                else if (usuario == "piedra"&& maquina == "tijeras"||
+                         usuario == "papel" && maquina == "piedra" ||
+                         usuario == "tijeras" && maquina == "papel")
                 {
                     Console.WriteLine($"Ronda n°{round} ganada");
+
                     gadasUsuario++;
+
                     if (gadasUsuario == 3)
                     {
                         Console.WriteLine("¡GANADOR!");
+
                         Console.WriteLine($"Ganaste en {round}, feliciades");
+
                       return;
                     }
                 }
-                else if (usuario == "piedra" && maquina == "papel" || usuario == "papel" && maquina == "tijeras" ||
+                else if (usuario == "piedra" && maquina == "papel" ||
+                         usuario == "papel" && maquina == "tijeras"||
                          usuario == "tijeras" && maquina == "piedra")
                 {
                     Console.WriteLine($"Ronda n°{round} perdida");
+
                     ganadasMaquina++;
+
                     if (ganadasMaquina==3)
                     {
+
                      Console.WriteLine($"Has perdido en la ronda n°{round}, ganador maquina"); 
+
                      return;
                     }
                 }

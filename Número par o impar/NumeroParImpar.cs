@@ -7,7 +7,9 @@ namespace ConsoleApp
         public void ejecutar()
         {
             Console.WriteLine("Ingrese 1  valor por teclado");
-            int x = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(
+            Console.ReadLine()
+            );
             int y = x % 2;
             if (y != 0)
             {
